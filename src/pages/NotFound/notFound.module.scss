@@ -1,0 +1,30 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+
+    text-transform: uppercase;
+
+    color: #5736A3;
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    &__link {
+        margin: 0 auto;
+        color: #b274f5;
+
+        &:hover {
+            color: #c8a2f0;
+        }
+    }
+}

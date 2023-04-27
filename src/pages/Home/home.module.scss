@@ -1,0 +1,58 @@
+.home {
+
+    &__section {
+        padding-top: 40px;
+
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+
+        text-transform: uppercase;
+
+        color: #5736A3;
+
+        @media screen and (max-width: 799px) {
+            padding-right: 16px;
+            padding-bottom: 28px;
+            padding-left: 16px;
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1279.89px) {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-right: 16px;
+            padding-bottom: 28px;
+            padding-left: 16px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-right: 16px;
+            padding-bottom: 28px;
+            padding-left: 16px;
+
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &__text_link {
+        text-decoration: none;
+        color: #b274f5;
+
+        &:hover {
+            color: #c8a2f0;
+        }
+    }
+}
