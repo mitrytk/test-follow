@@ -1,6 +1,8 @@
 .tweets {
 
     &__section {
+        padding-top: 20px;
+
         @media screen and (max-width: 799px) {
             padding-right: 16px;
             padding-bottom: 28px;
