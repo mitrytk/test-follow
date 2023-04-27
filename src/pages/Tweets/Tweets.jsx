@@ -13,6 +13,9 @@ const Tweets = () => {
     dispatch(fetchTweets());
   }, [dispatch]);
 
+  if (!tweets) {
+    return <div>Loading</div>;
+  }
   return (
     <>
       <section className={style.tweets__section}>
