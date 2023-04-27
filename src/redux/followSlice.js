@@ -19,8 +19,12 @@ export const followSlice = createSlice({
       },
     },
     unsetFollow(state, { payload }) {
-      const index = state.findIndex(({ id }) => id === payload.id);
-      state.splice(index + 1, 1);
+      const index = state.findIndex(({ user }) => {
+        console.log(user.id);
+        console.log(payload.id);
+        return user.id === payload.id;
+      });
+      state.splice(index, 1);
     },
   },
 });
