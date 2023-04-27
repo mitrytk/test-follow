@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 const FollowButton = ({ isActive, onClick }) => {
   const isLoading = useSelector(getIsLoading);
-  console.log(isLoading);
   return (
     <>
       <button
