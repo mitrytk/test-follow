@@ -1,0 +1,1 @@
+The project uses the features of React. Implemented rendering with Tweets cards API. The style of the cards is clearly on the layout. Cards are written using html semantics. Added user page routing. By adding information about the current subscription to Local Storage, the subscription information is saved between different sessions.
