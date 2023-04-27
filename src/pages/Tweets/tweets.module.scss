@@ -43,7 +43,6 @@
         border: 0;
 
         background: #EBD8FF;
-        box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
         border-radius: 10.3108px;
 
         font-family: 'Montserrat';
@@ -54,6 +53,29 @@
         text-transform: uppercase;
 
         color: #373737;
+
+        transition: 0.3s;
+    }
+
+    &__buttom_more {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        padding: 10px 30px;
+        border: 0;
+
+        background: #b274f5;
+        border-radius: 10.3108px;
+
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+
+        text-transform: uppercase;
+
+        color: #ffffff;
 
         transition: 0.3s;
     }
