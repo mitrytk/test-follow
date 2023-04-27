@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 const Tweets = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [page, setPage] = useState(1);
   const [showBtn, setShowBtn] = useState(true);
 
   const tweets = useSelector(getTweets);
@@ -23,13 +22,13 @@ const Tweets = () => {
   };
 
   const currentTweets = () => {
-    const numberOfDownloaded = page * 3;
-    return tweets.slice(0, numberOfDownloaded);
+    if (showBtn) {
+      return tweets.slice(0, 3);
+    }
+    return tweets;
   };
   const handlerLoadMore = () => {
-    const newPage = page + 1;
-    setPage(newPage);
-    setShowBtn(page < Math.ceil(tweets.length / 12));
+    setShowBtn(!showBtn);
   };
 
   return (
